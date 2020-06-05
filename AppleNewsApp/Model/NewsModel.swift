@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import UIKit
+
 struct NewsResponse: Codable {
     let status: String
     let totalResults: Int

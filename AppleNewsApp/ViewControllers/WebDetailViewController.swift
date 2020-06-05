@@ -13,7 +13,8 @@ class WebDetailViewController: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
     var url: String?
-
+    
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let url = URL(string: self.url ?? "") else { return }

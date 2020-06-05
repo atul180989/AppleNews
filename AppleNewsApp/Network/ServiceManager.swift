@@ -19,6 +19,7 @@ enum NetworkError: Error {
     }
     
 }
+
 class ServiceManager {
     public static let sharedInstance = ServiceManager()
     private init () {}

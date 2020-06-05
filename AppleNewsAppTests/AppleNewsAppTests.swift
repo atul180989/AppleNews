@@ -12,6 +12,7 @@ import XCTest
 class AppleNewsAppTests: XCTestCase {
 
     var viewModel: NewsViewModel!
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         viewModel = NewsViewModel()
@@ -36,6 +37,7 @@ class AppleNewsAppTests: XCTestCase {
     }
 }
 
+//MARK: - Mock Class
 class MockNewsViewModelServiceProtocol:NewsViewModelServiceProtocol {
     func getImage(imageUrl: String, completion: @escaping ((UIImage?, NetworkError?)) -> Void) {
         completion((UIImage(),nil))

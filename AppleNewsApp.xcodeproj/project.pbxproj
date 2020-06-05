@@ -20,6 +20,8 @@
 		BDC08BC5248A96720042C2A7 /* DetailArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC08BC4248A96720042C2A7 /* DetailArticleViewController.swift */; };
 		BDC08BC7248ABB3C0042C2A7 /* WebDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC08BC6248ABB3C0042C2A7 /* WebDetailViewController.swift */; };
 		BDC08BCF248AC0070042C2A7 /* AppleNewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC08BCE248AC0070042C2A7 /* AppleNewsAppTests.swift */; };
+		BDC08BD7248AD35A0042C2A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC08BD6248AD35A0042C2A7 /* Extensions.swift */; };
+		BDC08BD9248AD5030042C2A7 /* ArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC08BD8248AD5030042C2A7 /* ArticleCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		BDC08BCC248AC0070042C2A7 /* AppleNewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleNewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC08BCE248AC0070042C2A7 /* AppleNewsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleNewsAppTests.swift; sourceTree = "<group>"; };
 		BDC08BD0248AC0070042C2A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDC08BD6248AD35A0042C2A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BDC08BD8248AD5030042C2A7 /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 				BD229294248A6D0E00BC6F4A /* Model */,
 				BD22928E248A6BB600BC6F4A /* ViewControllers */,
 				BD229291248A6CD900BC6F4A /* ViewModel */,
-				BD229299248A801D00BC6F4A /* Constants.swift */,
+				BDC08BDC248AD58C0042C2A7 /* Constants */,
+				BDC08BDB248AD5630042C2A7 /* Utilities */,
+				BDC08BDA248AD5530042C2A7 /* CollectionViewCell */,
 			);
 			path = AppleNewsApp;
 			sourceTree = "<group>";
@@ -155,6 +161,30 @@
 				BDC08BD0248AC0070042C2A7 /* Info.plist */,
 			);
 			path = AppleNewsAppTests;
+			sourceTree = "<group>";
+		};
+		BDC08BDA248AD5530042C2A7 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BDC08BD8248AD5030042C2A7 /* ArticleCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		BDC08BDB248AD5630042C2A7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BDC08BD6248AD35A0042C2A7 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BDC08BDC248AD58C0042C2A7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BD229299248A801D00BC6F4A /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,12 +288,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDC08BD7248AD35A0042C2A7 /* Extensions.swift in Sources */,
 				BD229278248A6B5B00BC6F4A /* AppDelegate.swift in Sources */,
 				BD22927A248A6B5B00BC6F4A /* SceneDelegate.swift in Sources */,
 				BDC08BC7248ABB3C0042C2A7 /* WebDetailViewController.swift in Sources */,
 				BD22928C248A6B9E00BC6F4A /* HomeViewController.swift in Sources */,
 				BD229290248A6CD500BC6F4A /* NewsViewModel.swift in Sources */,
 				BD22929A248A801D00BC6F4A /* Constants.swift in Sources */,
+				BDC08BD9248AD5030042C2A7 /* ArticleCollectionViewCell.swift in Sources */,
 				BD229293248A6D0000BC6F4A /* NewsModel.swift in Sources */,
 				BDC08BC5248A96720042C2A7 /* DetailArticleViewController.swift in Sources */,
 				BD229297248A6D9500BC6F4A /* ServiceManager.swift in Sources */,
