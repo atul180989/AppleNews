@@ -270,23 +270,29 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="0qS-uz-Ve1">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="0qS-uz-Ve1" firstAttribute="centerX" secondItem="iRl-li-pRr" secondAttribute="centerX" id="Et7-t8-F4o"/>
                             <constraint firstItem="HTn-42-F9y" firstAttribute="trailing" secondItem="0V6-bM-OMO" secondAttribute="trailing" id="Pyi-GA-muF"/>
                             <constraint firstItem="0V6-bM-OMO" firstAttribute="top" secondItem="HTn-42-F9y" secondAttribute="top" id="QRS-Xe-k00"/>
+                            <constraint firstItem="0qS-uz-Ve1" firstAttribute="centerY" secondItem="iRl-li-pRr" secondAttribute="centerY" id="RfE-X8-u5d"/>
                             <constraint firstItem="HTn-42-F9y" firstAttribute="bottom" secondItem="0V6-bM-OMO" secondAttribute="bottom" id="ph1-Gs-SC6"/>
                             <constraint firstItem="0V6-bM-OMO" firstAttribute="leading" secondItem="HTn-42-F9y" secondAttribute="leading" id="xAl-q0-gey"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HTn-42-F9y"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="0qS-uz-Ve1" id="eTB-y7-vTu"/>
                         <outlet property="webView" destination="0V6-bM-OMO" id="5FC-vE-V6x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azu-S5-iBx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2070" y="98"/>
+            <point key="canvasLocation" x="2069.5652173913045" y="97.767857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xes-aY-AAl">

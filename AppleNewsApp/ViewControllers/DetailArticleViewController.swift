@@ -23,15 +23,15 @@ class DetailArticleViewController: UIViewController {
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "News"
+        title = detailVCTitle
         setUpView()
     }
     
     //MARK: - Setting up View
     private func setUpView() {
         articleTitleLabel.text = article.title
-        articleAuthorLabel.text = "By: \(self.article.author)"
-        articleDateLabel.text = "Updated: \(self.article.publishedAt.getFormattedDate())"
+        articleAuthorLabel.text = byConstant + (self.article.author)
+        articleDateLabel.text = updatedConstant + self.article.publishedAt.getFormattedDate()
         articleDescriptionLabel.text = article.description
         articleContentLabel.text = article.content
         if (articleImage != nil) {
