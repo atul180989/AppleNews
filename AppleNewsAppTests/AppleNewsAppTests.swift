@@ -12,11 +12,13 @@ import XCTest
 class AppleNewsAppTests: XCTestCase {
 
     var viewModel: NewsViewModel!
-    
+    var vc: HomeViewController!
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        viewModel = NewsViewModel()
         super.setUp()
+        
+        viewModel = NewsViewModel()
+        vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "HomeViewController") as? HomeViewController
+        vc.view.layoutIfNeeded()
     }
 
     override func tearDown() {
@@ -34,6 +36,10 @@ class AppleNewsAppTests: XCTestCase {
             XCTAssertTrue(error == nil)
             
         }
+    }
+    
+    func testViewController() {
+        XCTAssertTrue(vc.title == homeVCTitle)
     }
 }
 

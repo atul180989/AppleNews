@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ArticleCollectionViewCell: UICollectionViewCell {
+class ArticleCollectionViewCell: UICollectionViewCell, ArticleCollectionViewCellProtocol {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
@@ -29,4 +29,8 @@ class ArticleCollectionViewCell: UICollectionViewCell {
         super.prepareForReuse()
         articleImageView.image = nil
     }
+}
+
+protocol ArticleCollectionViewCellProtocol {
+    func configureCell(viewModel: NewsViewModel,article: Article)
 }

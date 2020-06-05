@@ -22,6 +22,7 @@
 		BDC08BCF248AC0070042C2A7 /* AppleNewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC08BCE248AC0070042C2A7 /* AppleNewsAppTests.swift */; };
 		BDC08BD7248AD35A0042C2A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC08BD6248AD35A0042C2A7 /* Extensions.swift */; };
 		BDC08BD9248AD5030042C2A7 /* ArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC08BD8248AD5030042C2A7 /* ArticleCollectionViewCell.swift */; };
+		BDC08BDE248AEA0E0042C2A7 /* ArticleCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC08BDD248AEA0E0042C2A7 /* ArticleCollectionViewCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		BDC08BD0248AC0070042C2A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDC08BD6248AD35A0042C2A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BDC08BD8248AD5030042C2A7 /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
+		BDC08BDD248AEA0E0042C2A7 /* ArticleCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				BDC08BCE248AC0070042C2A7 /* AppleNewsAppTests.swift */,
+				BDC08BDD248AEA0E0042C2A7 /* ArticleCollectionViewCellTests.swift */,
 				BDC08BD0248AC0070042C2A7 /* Info.plist */,
 			);
 			path = AppleNewsAppTests;
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDC08BCF248AC0070042C2A7 /* AppleNewsAppTests.swift in Sources */,
+				BDC08BDE248AEA0E0042C2A7 /* ArticleCollectionViewCellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
